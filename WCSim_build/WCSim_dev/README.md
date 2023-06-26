@@ -1,14 +1,11 @@
 # This is an on-working work for Spallation Neutron Source (SNS) US-Japan detector simulation work
 Our target is to evaluate the detector performance with different photon coverage (pc), size, and materials.
+This code could be found at 
+https://github.com/indigo40123/WCSim_USJapan
 
-This code could also be found at 
-https://
-
-Please contact LiCheng if you have any further questions
-feng.licheng.67p@st.u-kyoto.ac.jp
-
-#This version modified the "src/WCSimDetectorConfigs.cc" from the official WCSim code
+#This repository modified the "src/WCSimDetectorConfigs.cc" from the official WCSim code
 Official WCSim code could be found at
+https://github.com/WCSim/WCSim
 
 We set a diameter 3 meter x height 2 meter cylinder detector with 3-inch PMT, filled with pure water
 as a prelimiliary setting.
@@ -51,3 +48,5 @@ Simple usage would be ./bin/WCSim SNS_Example.mac
 /hk-BONSAI-1.2.1 : The Bonsai code (vertex reconstruction) to WCSim, on-working part. 
 
 #Last Update 2023. June 26th by LiCheng FENG
+Please contact LiCheng if you have any further questions
+feng.licheng.67p@st.u-kyoto.ac.jp
