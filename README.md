@@ -16,15 +16,15 @@ This would output wcsim.root (PMT output data) and geofile.txt (PMT distribution
 
 =====The files are organized as follows=====  
 output : These files include the different pc setting, which varies from 7.5, 15, 30, 60, 78.  
-output/Uni_15pc/Uni_data : WCSim output data  
-output/Uni_15pc/Uni_macfile : The mac files that produced WCSim output data.  
-output/Uni_15pc/Uni_evtlist : PMT hit event list, PMT id, and hit numbers  
+output/Uni_78pc/Uni_data : WCSim output data  
+output/Uni_78pc/Uni_macfile : The mac files that produced WCSim output data.  
+output/Uni_78pc/Uni_evtlist : PMT hit event list, PMT id, and hit numbers  
 
 =====/analysis read_PMT.C : The code to read WCSim output file=====  
 Usage:  
 (1) source compile.sh (Compile the code or run it with ROOT execute mode)  
 (2) ./read_PMT input_file (Run the code, I prefer to compile the code)                                  
-e.g. ./read_PMT ../output/Uni_15pc/Uni_data/sns_78pc_gamma_10MeV_Uni.root  
+e.g. ./read_PMT ../output/Uni_78pc/Uni_data/sns_78pc_gamma_10MeV_Uni.root  
 (3) Output files include a .pdf and evtlist file, which record PMT info.  
 e.g. output files are test_canvas.pdf and Test.txt  
 
