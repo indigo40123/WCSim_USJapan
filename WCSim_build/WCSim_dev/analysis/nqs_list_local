@@ -1,0 +1,15 @@
+echo 'Strat60 pc' 
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_01MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_2_2MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_04MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_06MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_08MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_10MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_15MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_20MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_25MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_30MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_35MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_40MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_45MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_50MeV_Uni.root

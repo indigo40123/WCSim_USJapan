@@ -1,0 +1,21 @@
+#build results
+libWCSimBonsai.so
+bonsai/WCSimBonsaiDict.cc
+tmp/
+*.pcm
+*.o
+._*
+build-*
+install-*
+*.idea
+
+#macro running
+*_C.d
+*_C.so
+
+# data files
+*.root
+
+# tuning programs
+data/tuning/create_like
+data/tuning/show_like

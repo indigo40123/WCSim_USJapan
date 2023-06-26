@@ -1,0 +1,17 @@
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/install/strip.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/edit_cache.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/install_WCSim.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/rebuild_cache.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/list_install_components.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/install/local.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/CMakeFiles/install.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/install/local.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/G__WCSimRoot.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/install/strip.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/WCSimCore.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/edit_cache.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/install.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/WCSimRoot.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/rebuild_cache.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/list_install_components.dir
+/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/src/CMakeFiles/WCSim.dir

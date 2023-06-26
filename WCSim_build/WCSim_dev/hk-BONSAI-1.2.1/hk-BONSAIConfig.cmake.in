@@ -1,0 +1,9 @@
+# ${PROJECT_NAME}Config.cmake
+
+get_filename_component( @PROJECT_NAME@_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH )
+
+include( CMakeFindDependencyMacro )
+find_dependency( WCSim REQUIRED )
+find_dependency( ROOT REQUIRED )
+
+include("${@PROJECT_NAME@_CMAKE_DIR}/@PROJECT_NAME@_Library_Targets.cmake")
