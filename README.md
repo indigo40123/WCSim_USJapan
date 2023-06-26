@@ -23,10 +23,10 @@ output/Uni_15pc/Uni_evtlist : PMT hit event list, PMT id and hit numbers
 
 =====/analysis read_PMT.C : The code to read WCSim output file=====  
 Usage:  
-[1] source compile.sh (Compile the code or run it with ROOT excute mode)  
-[2] ./read_PMT input_file (Run the code, I prefer to compile the code)                                  
+(1) source compile.sh (Compile the code or run it with ROOT excute mode)  
+(2) ./read_PMT input_file (Run the code, I prefer to compile the code)                                  
 e.g. ./read_PMT ../output/Uni_15pc/Uni_data/sns_78pc_gamma_10MeV_Uni.root  
-[3] Output files includes an .pdf and evtlist file which record PMT info.  
+(3) Output files includes an .pdf and evtlist file which record PMT info.  
 e.g. output files are test_canvas.pdf and Test.txt  
 
 =====/analysis/Python/Event_display.py : Plot out the PMT distribution=====  
@@ -41,11 +41,12 @@ input (2) Test.txt generates from read_PMT
 input (3) display event number  
 e.g. python ghetto_event_display.py ../../geofile.txt Test.txt 10  
 
+=====On-Working part======
 /analysis/Python/Eresol_Hit.py : Plot out the detector's Energy resolution of different pc.  
 /analysis/Python/Escape_Hit.py : Plot out the Escape photo fraction of different pc.  
-
 /script : codes to send jobs to cluster, on-working part.  
 /hk-BONSAI-1.2.1 : The Bonsai code (vertex reconstruction) to WCSim, on-working part.  
+
 
 #Last Update 2023. June 26th by LiCheng FENG  
 Please contact LiCheng if you have any further questions  
