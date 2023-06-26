@@ -7,8 +7,7 @@ https://github.com/indigo40123/WCSim_USJapan
 Official WCSim code can be found at  
 https://github.com/WCSim/WCSim  
 
-We set a diameter 3 meter x height 2-meter cylinder detector with 3-inch PMT, filled with pure water  
-as a preliminary setting.  
+We set a diameter 3 meter x height 2-meter cylinder detector with 3-inch PMT, filled with pure water as a preliminary setting.  
 The code is compiled at the WCSim_build/WCSim_dev as the main directory  
 The SNS_Example.mac includes the input particle setting.  
 Example Usage :  ./bin/WCSim SNS_Example.mac  
