@@ -14,7 +14,7 @@ Example Usage :  ./bin/WCSim SNS_Example.mac
 This would output wcsim.root (PMT output data) and geofile.txt (PMT distribution)  
 
 
-=====The files are organized as follows===== 
+=====The files are organized as follows=====  
 output : These files include the different pc setting, which varies from 7.5, 15, 30, 60, 78.  
 output/Uni_15pc/Uni_data : WCSim output data  
 output/Uni_15pc/Uni_macfile : The mac files that produced WCSim output data.  
