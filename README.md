@@ -22,7 +22,7 @@ output/Uni_15pc/Uni_macfile : The mac files that used to produce WCSim output da
 output/Uni_15pc/Uni_evtlist : PMT hit event list, PMT id and hit numbers  
 
 =====/analysis read_PMT.C : The code to read WCSim output file=====  
-Usage: 
+Usage:  
 [1] source compile.sh (Compile the code or run it with ROOT excute mode)  
 [2] ./read_PMT input_file (Run the code, I prefer to compile the code)                                  
 e.g. ./read_PMT ../output/Uni_15pc/Uni_data/sns_78pc_gamma_10MeV_Uni.root  
@@ -31,7 +31,7 @@ e.g. output files are test_canvas.pdf and Test.txt
 
 =====/analysis/Python/Event_display.py : Plot out the PMT distribution=====  
 require input file geofile.txt that generates from WCSim  
-Usage: 
+Usage:  
 python Event_display.py geofile.txt  
 e.g. python Event_display.py ../../geofile.txt  
 
