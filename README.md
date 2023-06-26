@@ -1,4 +1,4 @@
-=====This is detector simulation work for Spallation Neutron Source (SNS) US-Japan project=====
+=====This is detector simulation work for Spallation Neutron Source (SNS) US-Japan project=====  
 Our target is to evaluate the detector performance with different photon coverage (pc), size, and materials.  
 This code can be found at   
 https://github.com/indigo40123/WCSim_USJapan  
