@@ -40,7 +40,7 @@ input (2) Test.txt generates from read_PMT
 input (3) display event number  
 e.g. python ghetto_event_display.py ../../geofile.txt Test.txt 10  
 
-=====On-Working part======
+=====On-Working part======  
 /analysis/Python/Eresol_Hit.py : Plot out the detector's Energy resolution of different pc.  
 /analysis/Python/Escape_Hit.py : Plot out the Escape photo fraction of different pc.  
 /script : codes to send jobs to the cluster, on-working part.  
