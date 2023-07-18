@@ -40,13 +40,18 @@ input (2) Test.txt generates from read_PMT
 input (3) display event number  
 e.g. python ghetto_event_display.py ../../geofile.txt Test.txt 10  
 
-=====On-Working part======  
-/analysis/Python/Eresol_Hit.py : Plot out the detector's Energy resolution of different pc.  
-/analysis/Python/Escape_Hit.py : Plot out the Escape photo fraction of different pc.  
-/script : codes to send jobs to the cluster, on-working part.  
-/hk-BONSAI-1.2.1 : The Bonsai code (vertex reconstruction) to WCSim, on-working part.  
+=====Vertex Resconstruction (WCSim-Bonsai)======  
+/WCSim_build/WCSim_dev/hk-BONSAI-1.2.1.tar.gz : Original WCSim bonsai code
+source /WCSim_build/WCSim_dev/this_wcsim.sh : Please source your compiled WCSim 
+source /WCSim_build/WCSim_dev/hk-BONSAI-1.2.1env_sukap.sh : Define the path for WCSIMDIR and BONSAIDIR
+
+./WCSim_build/WCSim_dev/hk-BONSAI-1.2.1/rootbonsai : load necessary library within ROOT
+.x ../sample-root-scripts/sample_bonsai.C : execute the bonsai fitting sample code
+
+WCSim_build/WCSim_dev/hk-BONSAI-1.2.1/data/likelihood_binary : Probability Density Functions for T-TOF.
+To make WCSim bonsai load the designed PDF, Rename one of them as like.bin and place at WCSim_build/WCSim_dev/hk-BONSAI-1.2.1/data/ 
 
 
-#Last Update 2023. June 26th by LiCheng FENG  
+#Last Update 2023. July 18th by LiCheng FENG  
 Please contact LiCheng if you have any further questions  
 feng.licheng.67p@st.u-kyoto.ac.jp  
