@@ -1,10 +1,14 @@
 #define FOURLOG10 9.2103404
 
-#define NLIKE   56   /* # searched bins for quick search */
-#define NHIST   70   /* # bins for histogram for t0 presearch */
+//#define NLIKE   56   /* # searched bins for quick search */
+//#define NHIST   70   /* # bins for histogram for t0 presearch */
+#define NLIKE   80
+#define NHIST   100
 
-#define BINS1   30.  /* histogram #1 bin size in nsec*/
-#define BINS2    6.  /* histogram #2 bin size in nsec*/
+#define BINS1   60.
+#define BINS2   12.
+//#define BINS1   30.  /* histogram #1 bin size in nsec*/
+//#define BINS2    6.  /* histogram #2 bin size in nsec*/
 #define HRANGE  31
 
 #define FACT1    (1/BINS1)

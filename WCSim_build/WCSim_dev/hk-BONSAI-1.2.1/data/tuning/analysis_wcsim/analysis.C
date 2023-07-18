@@ -7,7 +7,7 @@
 #include "TMath.h"
 #include "TPaveStats.h"
 
-void analysis(TString infile,
+void analysis(TString infile="/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/sns_78pc_gamma_tune_tof.root",
 	      const int     start_lo = +99999,
 	      const int     start_hi = -99999,
 	      const char *  hname = "likelihood")

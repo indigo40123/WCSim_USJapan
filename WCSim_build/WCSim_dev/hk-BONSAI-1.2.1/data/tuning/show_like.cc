@@ -153,6 +153,7 @@ int main(int argc,char **argv)
 	  //likehis->SetBinContent(i+1,exp(FOURLOG10*(1e-5*loglike[i]-1)));
 	  likehis->SetBinContent(i+1,exp(FOURLOG10*(1e-5*loglike[j]-1)));
 	}
+      likehis->GetXaxis()->SetRangeUser(-50,100);
       likehis->Draw("L");
       gPad->SetTicks(1,1);
       //gPad->SetLogy();

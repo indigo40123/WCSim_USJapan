@@ -83,8 +83,8 @@ int read_PMT(const char *filename="../wcsim.root", int dumpHitTubes = 1) {
   PE->SetXTitle("Photoelectrons");
 
   TH1D *PMT_hits = new TH1D("PMT_hits","Hits vs PMT detector number", 120000,-0.5,120000-0.5);
-  TH1D *nHits = new TH1D("nHits","hit PMTs per trigger", 298, 0, 300 );
-  TH1D *nHits_no0 = new TH1D("nHits_no0","hit PMTs per trigger", 298, 2, 300 );
+  TH1D *nHits = new TH1D("nHits","hit PMTs per trigger", 250, 0, 250 );
+  TH1D *nHits_no0 = new TH1D("nHits_no0","hit PMTs per trigger", 240, 10, 250 );
   TH2D *QvsT = new TH2D("QvsT","charge vs. time", 40, 900, 1400, 40, -0.5, 15.5);
   QvsT->SetXTitle("time");
   QvsT->SetYTitle("charge");

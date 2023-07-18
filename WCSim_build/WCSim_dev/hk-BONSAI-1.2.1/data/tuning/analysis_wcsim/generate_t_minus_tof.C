@@ -17,7 +17,7 @@
 #include "WCSimRootEvent.hh"
 
 // Simple example of reading a generated Root file
-int generate_t_minus_tof(const char *filename, bool verbose=false)
+int generate_t_minus_tof(const char *filename="/disk02/usr7/licheng/ORNL_SNS/WCSim_Roger/WCSim_build/WCSim_dev/sns_78pc_gamma_tune.root", bool verbose=false)
 {
   // Clear global scope
   //gROOT->Reset();
@@ -154,7 +154,7 @@ int generate_t_minus_tof(const char *filename, bool verbose=false)
 	  TMath::Power(pmt->GetPosition(1) - wcsimrootevent->GetVtx(1), 2) + 
 	  TMath::Power(pmt->GetPosition(2) - wcsimrootevent->GetVtx(2), 2));
 	double tof = dof / c;
-	httof->Fill(time - tof);
+	httof->Fill(time - tof - 947.);
 	if(verbose){
 	  if(i < 10) // Only print first XX=10 tubes
 	    printf("q, t, tubeid: %f %f %d \n\tFlight distance (cm), tof (ns): %f %f\n",

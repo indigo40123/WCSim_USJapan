@@ -1,19 +1,15 @@
-echo 'Strat8 pc' 
-./nHit_PMT ../sns_8pc_gamma_1MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_2MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_3MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_4MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_5MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_6MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_7MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_8MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_9MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_10MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_15MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_20MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_25MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_30MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_35MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_40MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_45MeV_ISO.root
-./nHit_PMT ../sns_8pc_gamma_50MeV_ISO.root
+echo 'Strat60 pc' 
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_01MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_2_2MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_04MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_06MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_08MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_10MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_15MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_20MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_25MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_30MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_35MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_40MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_45MeV_Uni.root
+./nHit_PMT ../Uni_60pc/Uni_data/sns_60pc_gamma_50MeV_Uni.root

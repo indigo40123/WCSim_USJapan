@@ -21,7 +21,7 @@
 #endif
 
 // Simple example of reading a generated Root file
-int sample_bonsai(TString filename="../wcsim.root", bool verbose=false)
+int sample_bonsai(TString filename="../../output/Uni_8pc/Uni_data/sns_8pc_gamma_10MeV_ISO.root", bool verbose=false)
 {
   // Clear global scope
   //gROOT->Reset();
@@ -126,24 +126,25 @@ int sample_bonsai(TString filename="../wcsim.root", bool verbose=false)
   TH1F *hTrueT = new TH1F("hTrueT", "True T;True T (ns);Number in bin", 200, -1500, 1500);
   TH1F *hTrueR = new TH1F("hTrueR", "True R;True R = X^{2} + Y^{2} (cm);Number in bin", 100, 0, 4000);
   //recon
-  TH1F *hRecoX = new TH1F("hRecoX", "Reconstructed X;Reconstructed X (cm);Number in bin", 200, -4000, 4000);
-  TH1F *hRecoY = new TH1F("hRecoY", "Reconstructed Y;Reconstructed Y (cm);Number in bin", 200, -4000, 4000);
-  TH1F *hRecoZ = new TH1F("hRecoZ", "Reconstructed Z;Reconstructed Z (cm);Number in bin", 200, -3000, 3000);
-  TH1F *hRecoT = new TH1F("hRecoT", "Reconstructed T;Reconstructed T (ns);Number in bin", 200, -1500, 1500);
-  TH1F *hRecoR = new TH1F("hRecoR", "Reconstructed R;Reconstructed R = X^{2} + Y^{2} (cm);Number in bin", 100, 0, 4000);
+  TH1F *hRecoX = new TH1F("hRecoX", "Reconstructed X;Reconstructed X (cm);Number in bin", 200, -300, 300);
+  TH1F *hRecoY = new TH1F("hRecoY", "Reconstructed Y;Reconstructed Y (cm);Number in bin", 200, -300, 300);
+  TH1F *hRecoZ = new TH1F("hRecoZ", "Reconstructed Z;Reconstructed Z (cm);Number in bin", 200, -300, 300);
+  TH1F *hRecoT = new TH1F("hRecoT", "Reconstructed T;Reconstructed T (ns);Number in bin", 200, -150, 150);
+  TH1F *hRecoR = new TH1F("hRecoR", "Reconstructed R;Reconstructed R = X^{2} + Y^{2} (cm);Number in bin", 100, 0, 400);
   //resolution
-  TH1F *hResoX = new TH1F("hResoX", "Resolution X;(True - Reconstructed) X (cm);Number in bin", 50, -1000, 1000);
-  TH1F *hResoY = new TH1F("hResoY", "Resolution Y;(True - Reconstructed) Y (cm);Number in bin", 50, -1000, 1000);
-  TH1F *hResoZ = new TH1F("hResoZ", "Resolution Z;(True - Reconstructed) Z (cm);Number in bin", 50, -1000, 1000);
-  TH1F *hResoT = new TH1F("hResoT", "Resolution T;(True - Reconstructed) T (ns);Number in bin", 200, -1500, 1500);
-  TH1F *hResoR = new TH1F("hResoR", "Resolution R;(True - Reconstructed) R = X^{2} + Y^{2} (cm);Number in bin", 25, 0, 1000);
+  TH1F *hResoX = new TH1F("hResoX", "Resolution X;(True - Reconstructed) X (cm);Number in bin", 50, -200, 200);
+  TH1F *hResoY = new TH1F("hResoY", "Resolution Y;(True - Reconstructed) Y (cm);Number in bin", 50, -200, 200);
+  TH1F *hResoZ = new TH1F("hResoZ", "Resolution Z;(True - Reconstructed) Z (cm);Number in bin", 50, -200, 200);
+  TH1F *hResoT = new TH1F("hResoT", "Resolution T;(True - Reconstructed) T (ns);Number in bin", 200, -150, 150);
+  TH1F *hResoR = new TH1F("hResoR", "Resolution R;(True - Reconstructed) R = X^{2} + Y^{2} (cm);Number in bin", 25, 0, 200);
   //goodness
   TH1F *bsgy = new TH1F("Bonsai Goodness", "Bonsai Goodness", 200, -1500, 1500);
 
   // Now loop over events
-  for (int ev=0; ev<nevent; ev++)
+  for (int ev=0; ev<1000; ev++)
     {
       // Read the event from the tree into the WCSimRootEvent instance
+      if (ev%50 == 0) {std::cout<<ev<<std::endl;}
       tree->GetEntry(ev);      
       wcsimrootevent = wcsimrootsuperevent->GetTrigger(0);
       if(verbose){
@@ -334,8 +335,22 @@ int sample_bonsai(TString filename="../wcsim.root", bool verbose=false)
       wcsimrootsuperevent->ReInitialize();
       
     } // End of loop over events
+
+  TString fout(filename);
+  fout.ReplaceAll(".root","_analyzed.root");
+  //TString fout = argv[3];
+  TFile *outfile = new TFile(fout.Data(),"recreate");
+  outfile->cd();
+  hRecoX->Write();
+  hRecoY->Write();
+  hRecoZ->Write();
+  hResoX->Write();
+  hResoY->Write();
+  hResoZ->Write();
+  outfile->Close();
+  
   //  TCanvas c1("c1"); 
-  float win_scale = 0.75;
+  /*float win_scale = 0.75;
   int n_wide(2);
   int n_high(2);
   TCanvas* canv = new TCanvas("c1", "True", 500*n_wide*win_scale, 500*n_high*win_scale);
@@ -363,6 +378,6 @@ int sample_bonsai(TString filename="../wcsim.root", bool verbose=false)
   canv->cd(4); hResoR->Draw();
   canv->SaveAs(filename.Data());
   canv->SaveAs(TString::Format("%s]", filename.Data()));
-
+  */
   return 0;
 }

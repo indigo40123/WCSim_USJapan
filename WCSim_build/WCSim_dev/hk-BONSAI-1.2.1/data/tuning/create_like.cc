@@ -152,6 +152,21 @@ int main(int argc,char **argv)
 	    dhisto[i+nneg]+=0.0149453*exp(0.00767766*x);
 	  }
       }
+      
+      /*SNS 78% 3-inch PMT coverage, ID 3.0 m x 2.0 m*/
+      else if (j==9){
+        std::cout << "SNS 78% 3-inch PMT coverage, ID 3.0 m x 2.0 m" << std::endl;
+        dx=(i*TBIN/2.22546 );
+        if (x>-1.5)
+          dhisto[i+nneg]+=1*exp(-0.5*dx*dx);
+        if (x<=-1.5)
+          {
+            dhisto[i+nneg]+=0.00799013*exp(0.128587*x);
+            dhisto[i+nneg]+=1.70716*exp(0.517441*x);
+            dhisto[i+nneg]+=1.88128e-05*exp(-0.00468115*x);
+          }
+      }
+
     }
   sizes[0]=4;
   sizes[1]=4;
